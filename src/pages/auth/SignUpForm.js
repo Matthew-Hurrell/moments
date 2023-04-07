@@ -74,9 +74,9 @@ const SignUpForm = () => {
                         onChange={handleChange}
                     />
                 </Form.Group>
-                {errors.password1?.map((message, idx) => 
+                {errors.password1?.map((message, idx) => (
                   <Alert variant="warning" key={idx}>{message}</Alert>
-                )}
+                ))}
 
                 <Form.Group controlId="password2">
                     <Form.Label className="d-none">Confirm password</Form.Label>
@@ -89,16 +89,16 @@ const SignUpForm = () => {
                         onChange={handleChange}
                     />
                 </Form.Group>
-                {errors.password2?.map((message, idx) => 
+                {errors.password2?.map((message, idx) => (
                   <Alert variant="warning" key={idx}>{message}</Alert>
-                )}
+                ))}
 
                 <Button className={`${btnStyles.Button} ${btnStyles.Wide} ${btnStyles.Bright}`} type="submit">
                 Sign up
                 </Button>
-                {errors.non_field_errors?.map((message, idx) => 
+                {errors.non_field_errors?.map((message, idx) => (
                   <Alert variant="warning" key={idx} className="mt-3">{message}</Alert>
-                )}
+                ))}
             </Form>
 
         </Container>
