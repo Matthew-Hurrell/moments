@@ -37,7 +37,7 @@ const handleSubmit = async (event) => {
     }));
     setContent("");
     } catch (err) {
-    console.log(err);
+    // console.log(err);
     }
 };
 
